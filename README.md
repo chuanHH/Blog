@@ -2,6 +2,7 @@
 计划一周写一篇文章
 ## 进度
 js封装实现系列 正在进行。。。
+手写promise(http://creativecommons.org/licenses/by-nc-sa/3.0/cn/)
 ## 注意
 
 深入系列文章部分是有先后顺序的，按照目录结构顺序阅读效果最好。
