@@ -2,7 +2,8 @@
 计划一周写一篇文章
 ## 进度
 js封装实现系列 正在进行。。。
-手写promise(https://github.com/chuanHH/Blog/tree/master/articles/js%E5%9F%BA%E7%A1%80)
+手写promise
+(https://github.com/chuanHH/Blog/blob/master/articles/js%E5%9F%BA%E7%A1%80/promise.md)
 ## 注意
 
 深入系列文章部分是有先后顺序的，按照目录结构顺序阅读效果最好。
