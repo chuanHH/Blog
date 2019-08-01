@@ -1,6 +1,6 @@
 # 手写Promise
 ## PromiseA规范
->Promise对象代表一个异步操作，有三种状态：pending（进行中）、fulfilled（已成功）和       rejected（已失败）。一旦成功就不允许失败，一旦失败就不允许成功。
+>Promise对象代表一个异步操作，有三种状态：pending（进行中）、fulfilled（已成功）和rejected（已失败）。一旦成功就不允许失败，一旦失败就不允许成功。
 
 >Promise接收一个函数作为参数，该函数有两个参数，一个是resolve，表示成功时执行的函数，一个是reject，表示失败失败时执行的函数。resolve执行时传入的参数会作为then方法中第一个回调函数的参数，reject执行传入的参数会作为then方法中第二函数回调的参数
 
@@ -63,7 +63,7 @@ example
  ```
 es5支持异步的版本（订阅者模式）
 ```js
-function Prominse(excutor){
+function MyProminse(excutor){
     let self = this
     self.status = 'pending'
     self.value = null
@@ -90,7 +90,7 @@ try{
   reject(err)
 }
 }
-Promise.prototype.then = function(onFulfailled, onRejected){
+MyPromise.prototype.then = function(onFulfailled, onRejected){
     let self = this
     if(self.status==='fulfailled'){
      onFulfailled(self.value)
