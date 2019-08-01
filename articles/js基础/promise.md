@@ -74,14 +74,14 @@ function Prominse(excutor){
    if(self.status==='pending'){
     self.status='fulfailled'
     self.value=value
-    slef.onFulfailledCallbacks.forEach(item=>item(self.vslue))
+    self.onFulfailledCallbacks.forEach(item=>item(self.value))
    }
 }
-function reject(value){
+function reject(reason){
    if(self.status==='pending'){
      self.status='rejected'
-     self.value=value
-     slef.onRejectedCallbacks.forEach(item=>item(self.vslue))
+     self.reason=reason
+     self.onRejectedCallbacks.forEach(item=>item(self.reason))
    }
 }
 try{
@@ -100,7 +100,7 @@ Promise.prototype.then = function(onFulfailled, onRejected){
     }
     if(self.staus==='pending'){
       self.onFulfailledCallbacks.push(onFulfailed)
-       self.onRejectedCallbacks.push(onRejected)
+      self.onRejectedCallbacks.push(onRejected)
     }
 }
 ```
