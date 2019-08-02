@@ -1,9 +1,12 @@
 # chuanHH的博客
-计划一周写一篇文章
+计划一周写一篇深度文章
 ## 进度
 js封装实现系列 正在进行。。。
 
-[手写promise](https://github.com/chuanHH/Blog/blob/master/articles/js%E5%9F%BA%E7%A1%80/promise.md)
+[手写promise](https://github.com/chuanHH/Blog/blob/master/articles/js/promise.md)
+
+##一些基础知识整理（以面试题的方式）
+[html篇](https://github.com/chuanHH/Blog/blob/master/articles/html/interview.md)
 ## 注意
 
 深入系列文章部分是有先后顺序的，按照目录结构顺序阅读效果最好。
