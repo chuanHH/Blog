@@ -5,8 +5,7 @@ js封装实现系列 正在进行。。。
 
 [手写promise](https://github.com/chuanHH/Blog/blob/master/articles/js/promise.md)
 
-
-##一些基础知识整理（以面试题的方式）
+## 一些基础知识整理（以面试题的方式）
 
 [html篇](https://github.com/chuanHH/Blog/blob/master/articles/html/interview.md)
 ## 注意
