@@ -7,7 +7,7 @@ js封装实现系列 正在进行。。。
 
 ## 一些基础知识整理（以面试题的方式）
 
-(https://github.com/chuanHH/Blog/blob/master/articles/interview/index.md)
+[每日面试题](https://github.com/chuanHH/Blog/blob/master/articles/interview/index.md)
 ## 注意
 
 深入系列文章部分是有先后顺序的，按照目录结构顺序阅读效果最好。
