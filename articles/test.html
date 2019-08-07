@@ -7,22 +7,9 @@
     <title>Document</title>
 </head>
 <body>
-    <script>
-        function Test(name){
-            this.name = name
-        }
-        Test.prototype.arrowFn = () => {
-            console.log(this.name)
-        }
-        Test.prototype.arrowFn1 = function() {
-            console.log(this.name)
-            return () => {
-                console.log('arrowThis', this.name)
-            }
-        }
-        const test = new Test('test')
-        test.arrowFn()
-        test.arrowFn1()
-    </script>
+<div style="margin-top:20px">
+    <div style="float:left;width:200px;height:200px;background-color:red">float</div>
+    <div style="clear:both"></div>
+</div>
 </body>
 </html>
