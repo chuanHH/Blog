@@ -92,3 +92,26 @@
     （2）一个大的模块中model也会很大，虽然使用方便了也很容易保证了数据的一致性，当时长期持有，不释放内存就造成了花费更多的内存。
 
     （3）数据双向绑定不利于代码重用。客户端开发最常用的重用是View，但是数据双向绑定技术，让你在一个View都绑定了一个model，不同模块的model都不同。那就不能简单重用View了。 
+
+
+ 2. 自己实现双向数据绑定
+
+    双向数据绑定是通过 Object.defineProperty这个属性去实现的这是es5新增的属性，这也是vue不支持ie8及以下浏览器的根本原因
+
+     ```js
+    <input type="text" id="oInput"/>
+    <span id="oSpan"></span>
+    var obj = {};
+    Object.defineProperty(obj, 'test', {
+         get: function(){
+            return document.getElementById('oInput').value
+         },
+        　set: (newVal)=>{
+        　　　document.getElementById('oInput').value = newVal;
+        　　　document.getElementById('oSpan').innerHTML = newVal;
+        　}
+     });
+    document.addEventListener('input', (e)=>{
+        　obj.test = e.target.value;
+    })
+    ```
