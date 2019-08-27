@@ -13,8 +13,7 @@ Vue.js 是一款 MVVM 框架，数据模型仅仅是普通的 JavaScript 对象�
 
 我们先来简单实现一下
     
-   
-    ```js
+```js
     function cb(val){
         console.log(val + '更新啦...')
     }
@@ -32,68 +31,68 @@ Vue.js 是一款 MVVM 框架，数据模型仅仅是普通的 JavaScript 对象�
             }
         });
     }
-    ```
+```
 
-    我们来测试一下
+我们来测试一下
 
-    ```js
-        let testObj = {
-            name: 'hhc',
-            age: '27',
-            face: 'handsome'
-        }
-        defineReactive(testObj, 'name')
-        testObj.name = 'zj' //zj更新啦
-        defineReactive(testObj, 'age')
-        testObj.age = '25' //25更新啦 没有赋值成功是因为我们在set里面没有去做赋值操作
+```js
+    let testObj = {
+        name: 'hhc',
+        age: '27',
+         face: 'handsome'
+    }
+    defineReactive(testObj, 'name')
+    testObj.name = 'zj' //zj更新啦
+    defineReactive(testObj, 'age')
+     testObj.age = '25' //25更新啦 没有赋值成功是因为我们在set里面没有去做赋值操作
 
-    ```
+```
 
-    上面这样我们就监听了对象里面某个key值的变化啦
+上面这样我们就监听了对象里面某个key值的变化啦
 
-    但是这样一个个写很麻烦呀 所以我们再封装一下直接监听整个对象的变化
+但是这样一个个写很麻烦呀 所以我们再封装一下直接监听整个对象的变化
 
-    ```js
-    function observer (obj) {
-    if (!obj || (typeof obj !== 'object')) {
+ ```js
+function observer (obj) {
+   if (!obj || (typeof obj !== 'object')) {
         return;
     }
     
-    Object.keys(obj).forEach((key) => {
+  Object.keys(obj).forEach((key) => {
         defineReactive(obj, key, obj[key]); //defineReactive跟上面一样
     });
-   }
-    ```
-    我们再来试一下
+  }
+```
+我们再来试一下
 
-    ```js
-        let testObj1= {
-            name: 'zj',
-            age: 'z5',
-            face: 'beatiful'
-        }
-        observer(testObj1)
-
-        testObj1.name = 'hhc' // hhc更新啦 
-        testObj1.age= '27' // 27更新啦  现在就整个对象的变化都是可监听的啦
-    ```
-
-    ok，那我们回到vue里面，自己动手写一个vue
-
-    ```js
-    class Vue {
-    constructor(options) {
-        this.data = options.data;
-        observer(this.data); // observer跟上面一样
+```js
+    let testObj1= {
+        name: 'zj',
+         age: 'z5',
+        face: 'beatiful'
     }
-   }
-   let vue1 = new Vue({
-       data:{
-         test:'i am test'
-       }
-   })
+    observer(testObj1)
+
+    testObj1.name = 'hhc' // hhc更新啦 
+    testObj1.age= '27' // 27更新啦  现在就整个对象的变化都是可监听的啦
+ ```
+
+ ok，那我们回到vue里面，自己动手写一个vue
+
+```js
+class Vue {
+  constructor(options) {
+     this.data = options.data;
+     observer(this.data); // observer跟上面一样
+  }
+}
+ let vue1 = new Vue({
+     data:{
+        test:'i am test'
+     }
+ })
    vue1.data.test = 'i am vue' // i am vue更新啦
-    ```
+```
 
 
 ok到这里我们实现了一个最初的vue雏形，后面我们慢慢来增加。。。
