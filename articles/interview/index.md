@@ -1,4 +1,6 @@
 
+[20190827](https://github.com/chuanHH/Blog/blob/master/articles/interview/20190827.md)
+
 [20190816](https://github.com/chuanHH/Blog/blob/master/articles/interview/20190816.md)
 
 [20190812](https://github.com/chuanHH/Blog/blob/master/articles/interview/20190812.md)
