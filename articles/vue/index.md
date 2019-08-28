@@ -2,4 +2,4 @@
 
 [深入理解响应式原理](https://github.com/chuanHH/Blog/blob/master/articles/vue/observer.md)
 
-[ 依赖收集](https://github.com/chuanHH/Blog/blob/master/articles/vue/dependence.md)
+[依赖收集](https://github.com/chuanHH/Blog/blob/master/articles/vue/dependence.md)
