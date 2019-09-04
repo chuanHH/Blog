@@ -1,4 +1,4 @@
-[20190092](https://github.com/chuanHH/Blog/blob/master/articles/interview/20190902.md)
+[20190902](https://github.com/chuanHH/Blog/blob/master/articles/interview/20190902.md)
 
 [20190831](https://github.com/chuanHH/Blog/blob/master/articles/interview/20190831.md)
 
