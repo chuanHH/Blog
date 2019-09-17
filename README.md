@@ -5,6 +5,8 @@ js封装实现系列 正在进行。。。
 
 [手写promise](https://github.com/chuanHH/Blog/blob/master/articles/js/promise.md)
 
+[call,apply,bind的实现](https://github.com/chuanHH/Blog/blob/master/articles/js/call,apply,bind的实现.md)
+
 [vue系列](https://github.com/chuanHH/Blog/blob/master/articles/vue/index.md)
 
 [数据结构和算法](https://github.com/chuanHH/Blog/blob/master/articles/algorithm/index.md)
