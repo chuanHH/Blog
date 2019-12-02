@@ -13,10 +13,14 @@ js封装实现系列 正在进行。。。
 
 ## 一些基础知识整理（以面试题的方式）
 
-[每日面试题](https://github.com/chuanHH/Blog/blob/master/articles/interview/index.md)
+[基础面试题整理](https://github.com/chuanHH/Blog/blob/master/articles/interview/index.md)
+
+## 一些进阶
+
+[js基础进阶](https://github.com/chuanHH/Blog/blob/master/articles/advanced/index.md)
 ## 注意
 
-深入系列文章部分是有先后顺序的，按照目录结构顺序阅读效果最好。
+进阶类每周更新一次（时间真的有点不太够），侧重就js中某个知识点做深入挖掘
 
 ## 勘误及提问
 
